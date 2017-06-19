@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 1160;
+	height: 100%;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-style: normal;
+}
+
+/* вспомогательные стили  The following are the recommended styles for visually hiding content that will be read by a screen reader.
+http://webaim.org/techniques/css/invisiblecontent/ */
+
+.hidden {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/*______*/
+
+.header-nav {
+  width: 100%;
+  height: 75px;
+  margin-top: 40px;
+  background-color: #C8CD53;
+}
+.nav-bar {
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+.nav-list {
+  float: left;
+  max-width: 970px;
+  padding-top: 11px;
+  text-align: center;
+}
+.adress-list {
+  float: right;
+  max-width: 970px;
+  padding-top: 11px;
+  text-align: center;
+}
+
+.nav-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 14px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 14px;
+}
+.nav-item a:hover {
+  background-color: #6A972E;
+}
+
+.adress-item a:hover {
+  background-color: #C8CD53;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F7E0E1;
+  background-image: url(../img/header-background.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-name {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.brand-name {
+  padding-top: 70px;
+  font-size: 5em;
+  font-weight: 700;
+  color: #b78585;
+}
+
+.identic-name {
+  padding-top: 5px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #b78585;
+}
+
+.social-btn {
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.social-block {
+  position: relative;
+  max-width: 1270px;
+  min-height: 220px;
+  margin: 0 auto;
+}
+
+.social-block::before {
+	content: "";
+	position: absolute;
+	top: -150px;
+	left: 39%;
+	width: 294px;
+	height: 294px;
+	background-color: brown;
+	background: url(../img/logo.png) no-repeat;
+	background-position: 0px 0px;
+	opacity: 1;
+}
+
+.social-contact {
+  width: 500px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 170px;
+  text-align: center;
+}
+
+.social-btn {
+  display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+.fb-btn {
+  background-image: url(../img/fb-btn.png);
+  background-repeat: no-repeat;
+}
+
+.inst-btn {
+  background-image: url(../img/inst-btn.png);
+  background-repeat: no-repeat;
+}
+
+.vk-btn {
+  background-image: url(../img/vk-btn.png);
+  background-repeat: no-repeat;
+}
+
+.features {
+  width: 100%;
+  min-height: 690px;
+  background-color: #f2f2f2;
+}
+
+.features-block {
+  position: relative;
+  max-width: 1270px;
+  min-height: 690px;
+  margin: 0 auto;
+  border-top: 10px solid #C8CD53;
+  background-image: url(../img/about-us.jpg);
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+
+.features-item {
+  position: absolute;
+  top: 0;
+  left: 51%;
+  width: 33%;
+  height: 100%;
+}
+
+.features-head {
+  padding-top: 10px;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features-text {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.gallery {
+  max-width: 1270px;
+  min-height: 390px;
+  margin: auto;
+  margin-bottom: 50px;
+  border-bottom: 10px solid #C8CD53;
+}
+
+.gallery-content {
+  margin: 0;
+  
+}
+
+.gallery-content a {
+  float: left;
+  padding-top: 35px;
+  padding-right: 92px;
+}
+
+.gallery-content a:nth-child(3) {
+  float: right;
+  padding-right: 0px;
+}
+
+.busines-block {
+  position: relative;
+  max-width: 1270px;
+  min-height: 550px;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: url(../img/busines.jpg);
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.busines-item {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 33%;
+  height: 100%;
+}
+
+.busines-head {
+  padding-top: 10px;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.busines-text {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.get-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #C8CD53;
+  border: none;
+}
+
+.catering-block {
+  position: relative;
+  max-width: 1270px;
+  min-height: 620px;
+  margin: 0 auto;
+  padding-top: 0;
+  background-image: url(../img/catering.jpg);
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+
+.catering-item {
+  position: absolute;
+  top: 0;
+  left: 51%;
+  width: 33%;
+  height: 100%;
+}
+
+.catering-head {
+  padding-top: 10px;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catering-text {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.catering-order {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #C8CD53;
+  border: none;
+}
+
+.contact {
+  max-width: 1270px;
+  min-height: 350px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  border-top: 10px solid #C8CD53;
+}
+
+.contact-head {
+  padding-top: 100px;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-text {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.footer {
+  margin: 0 auto;
+  min-height: 150px;
+  background-color: #C8CD53;
+}
+.footer-copyright {
+  padding-top: 70px;
+  text-align: center;
+  font-weight: 300;
+  color: #ffffff;
+}
