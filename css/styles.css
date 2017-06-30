@@ -3,51 +3,57 @@
 
 html,
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	min-width: 1160;
-	height: 100%;
-	font-family: 'Roboto', 'Arial', sans-serif;
-	font-style: normal;
+  height: 100%;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: normal;
 }
 
 /* вспомогательные стили  The following are the recommended styles for visually hiding content that will be read by a screen reader.
 http://webaim.org/techniques/css/invisiblecontent/ */
 
 .hidden {
-	position:absolute;
-	left:-10000px;
-	top:auto;
-	width:1px;
-	height:1px;
-	overflow:hidden;
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 /*______*/
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .header-nav {
   width: 100%;
-  height: 75px;
+  min-height: 75px;
   margin-top: 40px;
   background-color: #C8CD53;
 }
 .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 970px;
 }
 
 .nav-list {
-  float: left;
-  max-width: 970px;
+  max-width: 65%;
   padding-top: 11px;
   text-align: center;
 }
 .adress-list {
-  float: right;
-  max-width: 970px;
+  max-width: 35%;
   padding-top: 11px;
   text-align: center;
 }
@@ -63,7 +69,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   font-size: 1em;
   font-weight: 400;
   line-height: normal;
-  padding-right: 14px;
+  padding-right: 12px;
   padding-top: 21px;
   padding-bottom: 21px;
   padding-left: 14px;
@@ -118,37 +124,31 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   max-width: 1270px;
   min-height: 220px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.social-block::before {
-	content: "";
-	position: absolute;
-	top: -150px;
-	left: 39%;
-	width: 294px;
-	height: 294px;
-	background-color: brown;
-	background: url(../img/logo.png) no-repeat;
-	background-position: 0px 0px;
-	opacity: 1;
+.social-block img {
+  margin-top: -140px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .social-contact {
   width: 500px;
   height: 40px;
   margin: 0 auto;
-  padding-top: 170px;
+  padding-top: 20px;
   text-align: center;
 }
 
 .social-btn {
   display: inline-block;
-	width: 34px;
-	height: 34px;
-	margin-right: 5px;
-	font-size: 0;
-	vertical-align: top;
-	text-decoration: none;
+  width: 34px;
+  height: 34px;
+  margin-right: 5px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
 }
 
 .fb-btn {
@@ -215,19 +215,13 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 }
 
 .gallery-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 310px;
   margin: 0;
-  
-}
-
-.gallery-content a {
-  float: left;
-  padding-top: 35px;
-  padding-right: 92px;
-}
-
-.gallery-content a:nth-child(3) {
-  float: right;
-  padding-right: 0px;
+  padding: 0;
+  padding-top: 35px; 
 }
 
 .busines-block {
@@ -380,4 +374,35 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   text-align: center;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media (max-width: 1100px){
+  .gallery-content__slide3 {
+    display: none;
+  }
+}
+
+@media (max-width: 970px){
+  
+  .features {
+    width: 100%;
+    min-height: 300px;
+    background-color: #f2f2f2;
+}
+  
+  .features-block {
+    position: relative;
+    max-width: 970px;
+    min-height: 300px;
+    margin: 0 auto;
+    background: #f2f2f2;
+  }
+  
+  .features-item {
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+  }
+  
 }
