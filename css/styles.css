@@ -35,32 +35,45 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .header-nav {
   width: 100%;
-  min-height: 75px;
+  min-height: 50px;
   margin-top: 40px;
   background-color: #C8CD53;
+  
 }
 .nav-bar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
   max-width: 970px;
+  min-height: 65px;
+  padding: 0;
 }
 
 .nav-list {
-  max-width: 65%;
-  padding-top: 11px;
-  text-align: center;
-}
-.adress-list {
-  max-width: 35%;
-  padding-top: 11px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
+  max-width: 200px;
+  margin: 0;
+  padding: 21px 0;
   list-style: none;
-  display: inline-block;
+}
+
+.nav-item:hover {
+  background-color: #6A972E;
+}
+
+.nav-list .nav-item:nth-child(1):hover {
+  background-color: #C8CD53;
 }
 
 .nav-item a {
@@ -69,18 +82,24 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   font-size: 1em;
   font-weight: 400;
   line-height: normal;
-  padding-right: 12px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 14px;
-}
-.nav-item a:hover {
-  background-color: #6A972E;
+  margin: 0;
+  padding: 5px 10px;
 }
 
-.adress-item a:hover {
-  background-color: #C8CD53;
+
+.adress-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
+
+
 
 .slider {
   position: relative;
@@ -134,7 +153,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 }
 
 .social-contact {
-  width: 500px;
+  width: 250px;
   height: 40px;
   margin: 0 auto;
   padding-top: 20px;
@@ -216,6 +235,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .gallery-content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   min-height: 310px;
@@ -308,7 +328,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   line-height: normal;
 }
 
-.catering-order {
+.feedBackbtn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -324,8 +344,32 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   border: none;
 }
 
+.feedBackform {
+	display: none;
+	position: fixed;
+	top: 338px;
+	right: 713px;
+	width: 477px;
+	min-height: 443px;
+	box-sizing: border-box;
+	background-color: #f8f7f4;
+	border-radius: 10px;
+}
+
+.feedBackform label {
+	display: none;
+	font-size: 11px;
+}
+
+
+
+
 .contact {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: 1270px;
   min-height: 350px;
   margin: auto;
@@ -334,51 +378,77 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   border-top: 10px solid #C8CD53;
 }
 
+
 .contact-head {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 50%;
-  padding-top: 20px;
+  margin: 0;
+  padding-left: 50px;
   font-size: 2em;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .contact-text {
-  position: absolute;
-  z-index: 9;
-  top: 0;
-  left: 50%;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 10px;
+  padding-left: 50px;
   font-size: 1em;
   font-weight: 300;
   line-height: normal;
 }
 
-.contact-map {
-  position: absolute;
-  z-index: 1;
-  top: 3px;
-  left: 0;
-}
-
 .footer {
   margin: 0 auto;
-  min-height: 150px;
+  min-height: 80px;
   background-color: #C8CD53;
 }
 .footer-copyright {
-  padding-top: 70px;
+  padding-top: 35px;
   text-align: center;
   font-weight: 300;
   color: #ffffff;
 }
 
+
+.modal-content {
+	position: absolute;
+  top: 2500px;
+  left: 30%;
+
+  display: none;
+  width: 300px;
+  min-height: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+	padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 1px 5px 20px 5px rgba(122,122,122,0.50);
+  background-color: rgba(244,241,235,1.00);
+}
+
+.modal-content-show {
+  display: block;
+}
+
+
+
+
 @media (max-width: 1100px){
   .gallery-content__slide3 {
     display: none;
+  }
+  
+  .social-contact {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .social-btn {
+    margin: 0;
+    padding-right: 15px;
   }
 }
 
@@ -393,7 +463,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   .features-block {
     position: relative;
     max-width: 970px;
-    min-height: 300px;
+    min-height: 400px;
     margin: 0 auto;
     background: #f2f2f2;
   }
@@ -405,4 +475,123 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     height: 70%;
   }
   
+  .busines-block {
+    position: relative;
+    max-width: 970px;
+    min-height: 380px;
+    margin: 0 auto;
+    background: #f2f2f2;
+  }
+  
+  .busines-item {
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+  }
+  
+  .busines-text-items {
+    display: inline-flex;
+    margin: 0;
+    margin-top: 5px;
+    padding-right: 25px;
+    padding-top: 0;
+  }
+  
+  .get-btn {
+    margin-top: 20px;
+  }
+  
+  .catering-block {
+    position: relative;
+    max-width: 970px;
+    min-height: 300px;
+    margin: 0 auto;
+    background: #f2f2f2;
+  }
+  
+  .catering-item {
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 810px) {
+  
+  .nav-bar {
+    display: block;
+    max-width: 810px;
+  }
+  
+  .nav-list .nav-item:nth-child(1) {
+    display: none;
+  }
+  
+  .nav-list {
+    display: block;
+    max-width: 810px;
+    
+  }
+  
+  .nav-item {
+    display: block;
+    max-width: 810px;
+    padding: 1%;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #b78585;
+  }
+  
+  .nav-item a {
+    padding: 0 70px;
+    
+  }
+  
+  
+  .adress-list {
+    display: block;
+    max-width: 810px;
+    background-color: #E36769;
+  }
+  
+  .adress-list a {
+    text-transform: uppercase;
+    
+}
+  
+  .adress-list a:hover {
+    background-color: #6A972E;
+  }
+  
+  .adress-item {
+    background-color: #E36769;
+  }
+
+  
+  .gallery-content__slide2 {
+    display: none;
+  }
+  
+  .gallery-content__slide1 {
+    margin: 0 auto;
+  }
+  
+  .contact-map {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  
+  .gallery-content__slide4 {
+    display: none;
+  }
+  
+  .nav-item {
+    font-size: 0.8em;
+}
 }
