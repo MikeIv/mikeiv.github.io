@@ -139,7 +139,11 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   min-height: 50px;
   margin: 0 auto;
   text-align: center;
-  background-color: #919191;
+  background-color: #f0f0f0;
+} 
+
+.footer-block p {
+  vertical-align: middle;
 }
 
 
