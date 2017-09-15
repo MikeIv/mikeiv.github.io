@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: normal;
+}
+
+
+/* вспомогательные стили  The following are the recommended styles for visually hiding content that will be read by a screen reader.
+http://webaim.org/techniques/css/invisiblecontent/ */
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  overflow: hidden;
+}
