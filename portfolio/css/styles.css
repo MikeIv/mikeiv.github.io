@@ -24,3 +24,36 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   font-size: 0;
   overflow: hidden;
 }
+
+.header {
+  width: 100%;
+  min-height: 150px;
+  background-color: #d6d6d6;
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1142px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.header-block__nav {
+  width: 20.1%;
+  min-height: 180px;
+  background-color: #afafaf;
+}
+
+.header-block__definition {
+  width: 78%;
+  min-height: 180px;
+  background-color: #868686;
+}
+
+.content-block {
+  max-width: 1142px;
+  height: 2000px;
+  margin: 0 auto;
+  background-color: #868686;
+}
