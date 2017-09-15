@@ -27,8 +27,9 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .header {
   width: 100%;
-  min-height: 150px;
-  background-color: #d6d6d6;
+  min-height: 250px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .header-block {
@@ -44,7 +45,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .nav-block {
   width: 182px;
   min-height: 180px;
-  background-color: #afafaf;
+  background-color: #ffffff;
 }
 
 .nav-block__list {
@@ -65,22 +66,26 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #414141;
+}
+
+.nav-block__item:hover {
+  font-weight: 400;
+  color: #4d4d4d;
+  text-shadow: 0px 2px 3px #9f9f9f;
 }
 
 .nav-block__item a {
-  color: #414141;
+  color: #9f9f9f;
   text-decoration: none;
 }
 
 .header-block__definition {
   width: 950px;
   align-self: center;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 100;
   text-transform: uppercase;
-  color: #afafaf;
-  background-color: #868686;
+  color: #919191;
 }
 
 .content-block {
