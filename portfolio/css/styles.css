@@ -92,5 +92,32 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   max-width: 1142px;
   height: 2000px;
   margin: 0 auto;
-  background-color: #868686;
+  background-color: #9f9f9f;
+}
+
+.portfolio-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1142px;
+}
+
+
+/* media rules */
+
+@media (max-width: 1170px) {
+  .portfolio-block {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .portfolio-block__item img {
+    margin: auto;
+  }
 }
