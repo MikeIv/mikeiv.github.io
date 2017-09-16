@@ -71,7 +71,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .nav-block__item:hover {
   font-weight: 400;
   color: #4d4d4d;
-  text-shadow: 0px 2px 3px #9f9f9f;
+  text-shadow: 0px 1px 2px #c3c3c3;
 }
 
 .nav-block__item a {
@@ -92,7 +92,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   max-width: 1142px;
   height: 2000px;
   margin: 0 auto;
-  background-color: #f0f0f0;
 }
 
 .portfolio-block {
@@ -130,17 +129,22 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   color: #919191;
 }
 
-
-
-
+.footer {
+  width: 100%;
+  min-height: 30px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+}
 
 .footer-block {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   max-width: 1142px;
   min-height: 50px;
   margin: 0 auto;
   text-align: center;
-  background-color: #f0f0f0;
-} 
+}
 
 .footer-block p {
   vertical-align: middle;
@@ -156,7 +160,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     margin: auto;
     text-align: center;
   }
-  
   .portfolio-block__item img {
     margin: auto;
   }
