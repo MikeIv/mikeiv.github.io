@@ -28,7 +28,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .header {
   width: 100%;
   min-height: 250px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   background-color: #ffffff;
 }
 
@@ -109,6 +109,26 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .portfolio-block__item {
   margin-bottom: 50px;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.portfolio-block__item img:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  box-shadow: 0px 4px 4px #919191;
+}
+
+.portfolio-block__item img {
+  border-radius: 10px;
 }
 
 .advantage,
