@@ -94,10 +94,14 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   margin: 0 auto;
 }
 
-.portfolio-block {
+.portfolio-block,
+.advantage-block,
+.tools-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   width: 1142px;
   margin: 0;
@@ -138,6 +142,14 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   min-height: 500px;
   margin-bottom: 80px;
   background-color: #ffffff;
+}
+
+.advantage-block__item,
+.tools-block__item {
+  width: 278px;
+  min-height: 330px;
+  margin-bottom: 20px;
+  background-color: #9f9f9f;
 }
 
 .advantage-block__definition,
