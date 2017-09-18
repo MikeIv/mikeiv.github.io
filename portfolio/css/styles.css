@@ -28,7 +28,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .header {
   width: 100%;
   min-height: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   background-color: #ffffff;
 }
 
@@ -90,7 +90,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .content {
   max-width: 1142px;
-  height: 2000px;
+  min-height: 2000px;
   margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   flex-wrap: wrap;
   width: 1142px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   padding: 0;
   list-style: none;
   background-color: #fff;
@@ -132,15 +132,17 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 }
 
 .advantage,
-.tools {
+.tools,
+.contacts {
   width: 100%;
   min-height: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   background-color: #ffffff;
 }
 
 .advantage-block__definition,
-.tools-block__definition {
+.tools-block__definition,
+.contacts-block__connect {
   width: 100%;
   font-size: 48px;
   font-weight: 100;
