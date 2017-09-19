@@ -281,6 +281,15 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   font-weight: 200;
 }
   
+  .advantage-block__definition,
+.tools-block__definition,
+.contacts-block__connect {
+  width: 100%;
+  padding-top: 50px;
+  font-size: 28px;
+  font-weight: 100;
+}
+  
   .portfolio-block,
   .advantage-block,
   .tools-block,
@@ -308,5 +317,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   
   .portfolio-block__item img {
   max-width: 300px;
+    min-height: 250;
 }
 }
