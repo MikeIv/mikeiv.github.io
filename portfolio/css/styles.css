@@ -288,6 +288,12 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     min-height: 200px;
     margin-bottom: 20px;
   }
+  
+  .portfolio-block__item {
+    width: 100%;
+  margin-bottom: 50px;
+}
+  
   .advantage-block__item,
   .tools-block__item {
     width: 100%;
