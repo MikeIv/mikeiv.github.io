@@ -90,7 +90,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .content {
   max-width: 1142px;
-  min-height: 2000px;
+  min-height: 2500px;
   margin: 0 auto;
 }
 
@@ -99,11 +99,12 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .tools-block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  width: 1142px;
+  width: 100%;
+  min-height: 700px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
@@ -139,17 +140,24 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .tools,
 .contacts {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
+  margin: 0 auto;
   margin-bottom: 80px;
   background-color: #ffffff;
 }
 
 .advantage-block__item,
 .tools-block__item {
-  width: 278px;
+  width: 240px;
   min-height: 330px;
   margin-bottom: 20px;
-  background-color: #9f9f9f;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: #fff;
 }
 
 .advantage-block__definition,
@@ -162,6 +170,26 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   text-transform: uppercase;
   color: #919191;
 }
+
+.advantage-block__header,
+.tools-block__header {
+  min-height: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #919191;
+  text-transform: uppercase;
+}
+
+.advantage-block__text,
+.tools-block__text {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #919191;
+}
+
 
 .footer {
   width: 100%;
