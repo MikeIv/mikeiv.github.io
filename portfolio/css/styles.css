@@ -273,6 +273,14 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     text-align: center;
     list-style: none;
   }
+  
+  .header-block__definition {
+  width: 100%;
+  align-self: center;
+  font-size: 28px;
+  font-weight: 200;
+}
+  
   .portfolio-block,
   .advantage-block,
   .tools-block,
@@ -280,16 +288,15 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     min-height: 200px;
     margin-bottom: 20px;
   }
-  
   .advantage-block__item,
-.tools-block__item {
-  width: 100%;
-  min-height: 100px;
-  margin-bottom: 10px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+  .tools-block__item {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
