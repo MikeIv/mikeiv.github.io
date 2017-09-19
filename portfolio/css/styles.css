@@ -286,7 +286,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .contacts-block__connect {
   width: 100%;
   padding-top: 50px;
-  font-size: 28px;
+  font-size: 21px;
   font-weight: 100;
 }
   
@@ -317,6 +317,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   
   .portfolio-block__item img {
   max-width: 300px;
-    min-height: 250;
+    height: 250px;
 }
 }
