@@ -96,7 +96,8 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .portfolio-block,
 .advantage-block,
-.tools-block {
+.tools-block,
+.contacts-block {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -104,12 +105,12 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   align-content: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 700px;
+  min-height: 500px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
   list-style: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .portfolio-block__item {
@@ -160,10 +161,18 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   background-color: #fff;
 }
 
+.contacts-block__item {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  text-align: center;
+}
+
 .advantage-block__definition,
 .tools-block__definition,
 .contacts-block__connect {
   width: 100%;
+  padding-top: 100px;
   font-size: 48px;
   font-weight: 100;
   text-align: center;
@@ -181,6 +190,15 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   text-transform: uppercase;
 }
 
+.contacts-block__header {
+  min-height: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #919191;
+  text-transform: uppercase;
+}
+
 .advantage-block__text,
 .tools-block__text {
   padding-top: 10px;
@@ -188,6 +206,14 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   font-size: 14px;
   line-height: 16px;
   color: #919191;
+}
+
+.contacts-block__text {
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 15px;
+  color: #4d4d4d;
 }
 
 
