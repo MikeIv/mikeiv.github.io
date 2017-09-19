@@ -305,4 +305,8 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     padding-left: 5px;
     padding-right: 5px;
   }
+  
+  .portfolio-block__item img {
+  max-width: 300px;
+}
 }
