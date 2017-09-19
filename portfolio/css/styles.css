@@ -94,7 +94,23 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   margin: 0 auto;
 }
 
-.portfolio-block,
+
+.portfolio-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  list-style: none;
+  background-color: #ffffff;
+}
+
 .advantage-block,
 .tools-block,
 .contacts-block {
@@ -273,23 +289,20 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     text-align: center;
     list-style: none;
   }
-  
   .header-block__definition {
-  width: 100%;
-  align-self: center;
-  font-size: 28px;
-  font-weight: 200;
-}
-  
+    width: 100%;
+    align-self: center;
+    font-size: 28px;
+    font-weight: 200;
+  }
   .advantage-block__definition,
-.tools-block__definition,
-.contacts-block__connect {
-  width: 100%;
-  padding-top: 50px;
-  font-size: 21px;
-  font-weight: 100;
-}
-  
+  .tools-block__definition,
+  .contacts-block__connect {
+    width: 100%;
+    padding-top: 50px;
+    font-size: 21px;
+    font-weight: 100;
+  }
   .portfolio-block,
   .advantage-block,
   .tools-block,
@@ -297,12 +310,10 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     min-height: 200px;
     margin-bottom: 20px;
   }
-  
   .portfolio-block__item {
     width: 100%;
-  margin-bottom: 50px;
-}
-  
+    margin-bottom: 50px;
+  }
   .advantage-block__item,
   .tools-block__item {
     width: 100%;
@@ -314,9 +325,8 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     padding-left: 5px;
     padding-right: 5px;
   }
-  
   .portfolio-block__item img {
-  max-width: 300px;
+    max-width: 300px;
     height: 230px;
-}
+  }
 }
