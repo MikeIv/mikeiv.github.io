@@ -118,12 +118,12 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 }
 
 @keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 .portfolio-block__item img:hover {
@@ -216,7 +216,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   color: #4d4d4d;
 }
 
-
 .footer {
   width: 100%;
   min-height: 30px;
@@ -251,4 +250,46 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   .portfolio-block__item img {
     margin: auto;
   }
+}
+
+@media (max-width: 600px) {
+  .header-block {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav-block {
+    width: 100%;
+  }
+  .nav-block__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    ;
+    padding-top: 10px;
+    text-align: center;
+    list-style: none;
+  }
+  .portfolio-block,
+  .advantage-block,
+  .tools-block,
+  .contacts-block {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .advantage-block__item,
+.tools-block__item {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 }
