@@ -313,6 +313,10 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 /* media rules */
 
 @media (max-width: 1170px) {
+  .nav-block__list {
+    margin-left: 10px;
+  }
+  
   .portfolio-block {
     display: block;
     width: 100%;
@@ -340,7 +344,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     width: 100%;
     margin: 0;
     padding: 5px;
-    ;
     padding-top: 10px;
     text-align: center;
     list-style: none;
