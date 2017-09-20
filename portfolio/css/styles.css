@@ -121,7 +121,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   align-content: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
@@ -165,16 +165,73 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 
 .advantage-block__item,
 .tools-block__item {
+  position: relative;
   width: 240px;
-  min-height: 300px;
+  min-height: 250px;
   margin-bottom: 20px;
   margin-left: 3px;
   margin-right: 3px;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
   background-color: #fff;
+}
+
+.advantage-block__item::before,
+.tools-block__item::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 115px;
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.advantage-block__item2::before {
+  background-position: 0 -43px;
+}
+
+.advantage-block__item3::before {
+  background-position: 0 -86px;
+}
+
+.advantage-block__item4::before {
+  background-position: 0 -129px;
+}
+
+.advantage-block__item5::before {
+  background-position: 0 -172px;
+}
+
+.advantage-block__item6::before {
+  background-position: 0 -215px;
+}
+
+.advantage-block__item7::before {
+  background-position: 0 -258px;
+}
+
+.advantage-block__item8::before {
+  background-position: 0 -301px;
+}
+
+.tools-block__item1::before {
+  background-position: 0 -344px;
+}
+
+.tools-block__item2::before {
+  background-position: 0 -387px;
+}
+
+.tools-block__item3::before {
+  background-position: 0 -430px;
+}
+
+.tools-block__item4::before {
+  background-position: 0 -473px;
 }
 
 .contacts-block__item {
@@ -188,7 +245,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
 .tools-block__definition,
 .contacts-block__connect {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 48px;
   font-weight: 100;
   text-align: center;
