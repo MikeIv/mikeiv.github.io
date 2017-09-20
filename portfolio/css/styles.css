@@ -401,6 +401,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   }
   
   .contacts {
+    min-height: 100px;
   margin-bottom: 0px;
 }
 }
