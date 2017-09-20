@@ -374,7 +374,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   .advantage-block__item,
   .tools-block__item {
     width: 100%;
-    min-height: 150px;
+    min-height: 180px;
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
@@ -386,4 +386,12 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     max-width: 300px;
     height: 230px;
   }
+  
+  .advantage-block__item::before,
+.tools-block__item::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 125px;
+}
 }
