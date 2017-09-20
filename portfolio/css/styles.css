@@ -94,7 +94,6 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   margin: 0 auto;
 }
 
-
 .portfolio-block {
   display: flex;
   flex-direction: row;
@@ -378,7 +377,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -387,11 +386,21 @@ http://webaim.org/techniques/css/invisiblecontent/ */
     height: 230px;
   }
   
+  .advantage-block__header,
+.tools-block__header {
+  margin: auto;
+  padding-top: 20px;
+}
+  
   .advantage-block__item::before,
-.tools-block__item::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 125px;
+  .tools-block__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 125px;
+  }
+  
+  .contacts {
+  margin-bottom: 0px;
 }
 }
