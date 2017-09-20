@@ -374,7 +374,7 @@ http://webaim.org/techniques/css/invisiblecontent/ */
   .advantage-block__item,
   .tools-block__item {
     width: 100%;
-    min-height: 100px;
+    min-height: 150px;
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
