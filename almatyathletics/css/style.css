@@ -108,7 +108,7 @@ fieldset {
 }
 .main-nav__item:hover {
   padding-right: 10px;
-  background-color: #fff776;
+  background-color: #fde666;
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
   -webkit-transform: scale(1.1);
@@ -187,25 +187,37 @@ fieldset {
   text-align: center;
 }
 .intro__btn {
-  width: 210px;
+  position: relative;
+  z-index: 6;
+  margin: 10px 0;
   padding: 10px 30px;
   color: #ffffff;
   background-color: #3cccef;
   border-radius: 30px;
-  border: 2px solid #fff776;
+  border: 2px solid #fde666;
   text-transform: uppercase;
+}
+.intro__btn:hover {
+  color: #fde666;
+  background-color: #25abcd;
 }
 .intro__news {
   margin-bottom: 30px;
   margin-top: 25px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
   color: #ffffff;
-  border-radius: 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 3px solid #f4c839;
   background-color: #25abcd;
+}
+.intro__news:hover {
+  color: #fde666;
+  background-color: #3cccef;
 }
 .slogan {
   width: auto;
@@ -329,7 +341,7 @@ fieldset {
       flex-wrap: wrap;
   width: 0 auto;
   min-height: 330px;
-  background-color: #fcfdb3;
+  background-color: #ffffff;
 }
 .promo-news img {
   width: 592px;
@@ -342,6 +354,26 @@ fieldset {
   min-height: 280px;
   margin-right: auto;
   padding-right: 50px;
+}
+.promo-news__header {
+  margin-top: 65px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: normal;
+  color: #04619e;
+}
+.promo-news__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #25abcd;
+}
+.promo-news__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #d03a17;
+  text-decoration: underline;
 }
 .calendar {
   width: auto;
@@ -370,9 +402,17 @@ fieldset {
   background-size: contain;
 }
 .calendar__header {
-  padding-top: 50px;
+  padding-top: 70px;
   font-size: 26px;
   color: #04619e;
+}
+.calendar__link {
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #d03a17;
+  text-decoration: underline;
 }
 .contacts {
   width: auto;
