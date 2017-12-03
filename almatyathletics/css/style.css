@@ -134,11 +134,16 @@ fieldset {
   text-align: right;
 }
 .main-nav__item {
+<<<<<<< HEAD
   margin: 0;
   margin-bottom: 16px;
   padding: 3px 0;
   font-size: 18px;
   line-height: 20px;
+=======
+  margin: 8px 0;
+  font-size: 18px;
+>>>>>>> 286fc81ee8645370bab6d0cac2ee387f21d4ebbb
 }
 .main-nav__item--activ {
   position: relative;
@@ -1248,6 +1253,7 @@ fieldset {
   font-size: 14px;
   line-height: 21px;
   font-style: italic;
+<<<<<<< HEAD
 }
 .social {
   display: -webkit-box;
@@ -1288,4 +1294,6 @@ fieldset {
 }
 .social__item:active {
   border: 2px solid rgba(40, 54, 69, 0.1);
+=======
+>>>>>>> 286fc81ee8645370bab6d0cac2ee387f21d4ebbb
 }
