@@ -1,0 +1,4 @@
+User-agent: Yandex
+Disallow:
+Host: vogoo.ru
+Sitemap: http://vogoo.ru/sitemap.xml
