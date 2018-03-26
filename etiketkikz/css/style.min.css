@@ -201,7 +201,7 @@ img {
 .main-nav__toggle {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 10px;
   z-index: 2;
   display: block;
   width: 50px;
@@ -234,7 +234,7 @@ img {
 
 .main-nav--opened .main-nav__toggle {
   top: 10px;
-  right: 20px;
+  right: 10px;
 }
 
 .main-nav--opened .main-nav__toggle::after,
@@ -331,10 +331,11 @@ img {
 }
 
 .main-nav__logo-wrapper {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .main-nav__mail {
+  font-size: 14px;
   color: #ee365d;
 }
 
@@ -373,6 +374,10 @@ img {
   border-top: 1px solid #ff597c;
 }
 
+.main-nav__item--activ {
+  background-color: #ff597c;
+}
+
 .main-nav__item--top {
   border-top: none;
 }
@@ -402,8 +407,20 @@ img {
   align-items: center;
   text-align: center;
   min-height: 57px;
-  background-color: #ee365d;
+  background-color: #d42b4e;
   border-top: 1px solid #d42b4e;
+}
+
+.main-nav__hidden {
+  display: none;
+}
+
+.intro__btn a,
+.main-nav__index a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main-nav__phone-number {
@@ -422,11 +439,15 @@ img {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-color: #d3d3d3;
+  background-color: #fff;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: auto 100%;
+}
+
+.main-page__instyle {
+  background-image: none;
 }
 
 .intro {
@@ -437,9 +458,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -447,10 +468,11 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
   width: auto;
-  min-height: calc(50vh);
+  min-height: calc(75vh);
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -460,7 +482,7 @@ img {
   word-wrap: break-word;
   margin-left: 6px;
   margin-right: 6px;
-  margin-bottom: auto;
+  margin-bottom: 50px;
   font-size: 24px;
   line-height: 28px;
   color: #ee365d;
@@ -479,9 +501,10 @@ img {
 .intro__btn a {
   font-size: 24px;
   line-height: 36px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
+}
+
+.intro__social {
+  margin-bottom: auto;
 }
 
 .intro__social-item,
@@ -510,6 +533,13 @@ img {
   border-radius: 50px;
 }
 
+.nav-footer {
+  width: 100%;
+  min-height: 100px;
+  margin-top: auto;
+  background-color: #ee365d;
+}
+
 .nav-footer__item,
 .nav-footer__list {
   display: -webkit-box;
@@ -525,6 +555,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding: 0;
 }
 
 .nav-footer__item {
@@ -532,7 +563,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   width: 34%;
-  min-height: 125px;
+  min-height: 100px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -608,6 +639,7 @@ img {
   padding-left: 20px;
 }
 
+.catalog__item a,
 .nav-footer__item a,
 .prod-info__item a {
   text-decoration: none;
@@ -970,6 +1002,625 @@ img {
   color: #fff;
 }
 
+.catalog {
+  padding-top: 50px;
+}
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.catalog__item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 125px;
+  height: auto;
+  margin-bottom: 30px;
+  background-color: #ff597c;
+  text-align: center;
+}
+
+.catalog__item,
+.catalog__item img {
+  padding-bottom: 20px;
+}
+
+.catalog__item a {
+  color: #fff;
+}
+
+.breadcrumbs {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs__item,
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.breadcrumbs__list {
+  overflow: hidden;
+}
+
+.breadcrumbs__item {
+  margin-right: 22px;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  padding: 8px 5px 8px 10px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  background: #ff597c;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:hover::after {
+  background-color: #ee365d;
+}
+
+.breadcrumbs__link:hover::before {
+  border-color: #ee365d #ee365d #ee365d transparent;
+}
+
+.breadcrumbs__link:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -18px;
+  border-width: 18px 10px 18px 14px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #ff597c #ff597c #ff597c transparent;
+  left: -1em;
+}
+
+.breadcrumbs__link:after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  margin-top: -20px;
+  right: -5px;
+  top: 50%;
+  width: 35px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 8px;
+  background-color: #ff597c;
+  z-index: -1;
+}
+
+.breadcrumbs__link-active {
+  background-color: #707070;
+}
+
+.breadcrumbs__link-active:hover,
+.breadcrumbs__link-active:hover::after {
+  background-color: #4a4a4a;
+}
+
+.breadcrumbs__link-active:hover::before {
+  border-color: #4a4a4a #4a4a4a #4a4a4a transparent;
+}
+
+.breadcrumbs__link-active:before {
+  border-color: #707070 #707070 #707070 transparent;
+  left: -1em;
+}
+
+.breadcrumbs__link-active:after {
+  background-color: #707070;
+}
+
+.alcogol {
+  width: 100%;
+}
+
+.alcogol__item {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.alcogol__img {
+  position: relative;
+}
+
+.alcogol__img::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  padding: 8px 30px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ee365d;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0 10px 0 0;
+}
+
+.alcogol__img img,
+.catalog__item img,
+.oil__img img,
+.sticker-save__img img {
+  width: 100%;
+  height: auto;
+}
+
+.alcogol__img,
+.alcogol__img-dop {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.alcogol__img-01::before {
+  content: "Этикетки на алкоголь";
+}
+
+.alcogol__img-02 {
+  border-top: 10px solid #d42b4e;
+}
+
+.alcogol__img-02::before {
+  content: "Винная этикетка";
+  background-color: #d42b4e;
+}
+
+.alcogol__img-03 {
+  border-top: 10px solid #707070;
+}
+
+.alcogol__img-03::before {
+  content: "Этикетки на водку";
+  background-color: #707070;
+}
+
+.alcogol__txt {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  -ms-flex-item-align: left;
+  align-self: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.alcogol__txt-full {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  -ms-flex-item-align: left;
+  align-self: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.alcogol__txt-full--list {
+  font-style: italic;
+  color: #ee365d;
+}
+
+.alcogol__link,
+.alcogol__order {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #fff;
+  background-color: #ff597c;
+  text-decoration: none;
+}
+
+.alcogol__order {
+  margin-top: -120px;
+  margin-bottom: 120px;
+  background-color: #d42b4e;
+}
+
+.oil {
+  width: 100%;
+}
+
+.oil__item {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.oil__img {
+  position: relative;
+}
+
+.oil__img::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  padding: 8px 30px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ee365d;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0 10px 0 0;
+}
+
+.oil__img,
+.oil__img-dop {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.oil__img-01::before {
+  content: "Этикетки на моторное масло";
+}
+
+.oil__img-02 {
+  border-top: 10px solid #d42b4e;
+}
+
+.oil__img-02::before {
+  content: "Винная этикетка";
+  background-color: #d42b4e;
+}
+
+.oil__img-03 {
+  border-top: 10px solid #707070;
+}
+
+.oil__img-03::before {
+  content: "Этикетки на водку";
+  background-color: #707070;
+}
+
+.oil__txt {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  -ms-flex-item-align: left;
+  align-self: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.oil__txt-full {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  -ms-flex-item-align: left;
+  align-self: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.oil__txt-full--list {
+  font-style: italic;
+  color: #ee365d;
+}
+
+.oil__link,
+.oil__order {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #fff;
+  background-color: #ff597c;
+  text-decoration: none;
+}
+
+.oil__order {
+  margin-top: -120px;
+  margin-bottom: 120px;
+  background-color: #d42b4e;
+}
+
+.sticker-save {
+  width: 100%;
+}
+
+.sticker-save__item {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sticker-save__img {
+  position: relative;
+}
+
+.sticker-save__img::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  padding: 8px 30px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ee365d;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0 10px 0 0;
+}
+
+.sticker-save__img,
+.sticker-save__img-dop {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.sticker-save__img-01::before {
+  content: "Защитные этикетки";
+}
+
+.sticker-save__img-02 {
+  border-top: 10px solid #d42b4e;
+}
+
+.sticker-save__img-02::before {
+  content: "Винная этикетка";
+  background-color: #d42b4e;
+}
+
+.sticker-save__img-03 {
+  border-top: 10px solid #707070;
+}
+
+.sticker-save__img-03::before {
+  content: "Этикетки на водку";
+  background-color: #707070;
+}
+
+.sticker-save__txt {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  -ms-flex-item-align: left;
+  align-self: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.sticker-save__txt-full {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  -ms-flex-item-align: left;
+  align-self: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.sticker-save__txt-full--list {
+  font-style: italic;
+  color: #ee365d;
+}
+
+.sticker-save__link,
+.sticker-save__order {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #fff;
+  background-color: #ff597c;
+  text-decoration: none;
+}
+
+.sticker-save__order {
+  margin-top: -120px;
+  margin-bottom: 120px;
+  background-color: #d42b4e;
+}
+
+.about {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #ee365d;
+  background-image: url(../img/bg-about-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  background-size: 100% auto;
+}
+
+.about__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.about__intro-block {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about__intro-header {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about__intro-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.about-info__txt {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  color: #ee365d;
+}
+
+.about-info__txt--black {
+  color: #231f20;
+}
+
+.about-info__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about-info__order {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #ff597c;
+  border-radius: 10px;
+}
+
+.about-info__order-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #231f20;
+}
+
+.about-info__order-mail,
+.about-info__order-phone {
+  font-size: 28px;
+  line-height: 42px;
+  color: #fff;
+}
+
 @media screen and (min-width:100px) {
   .wrapper {
     padding-left: 6px;
@@ -1092,6 +1743,112 @@ img {
   .footer {
     display: none;
   }
+
+  .catalog__list {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+
+  .catalog__item {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .catalog__item {
+    width: calc(41.66666666666667% - 3px);
+  }
+
+  .alcogol__item {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+
+  .alcogol__txt {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .alcogol__txt {
+    width: calc(100% - 3px);
+  }
+
+  .alcogol__txt-full {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .alcogol__txt-full {
+    display: none;
+  }
+
+  .oil__item {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+
+  .oil__txt {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .oil__txt {
+    width: calc(100% - 3px);
+  }
+
+  .oil__txt-full {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .oil__txt-full {
+    display: none;
+  }
+
+  .sticker-save__item {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+
+  .sticker-save__txt {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .sticker-save__txt {
+    width: calc(100% - 3px);
+  }
+
+  .sticker-save__txt-full {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .sticker-save__txt-full {
+    display: none;
+  }
+
+  .about__intro-block {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .about__intro-block {
+    width: calc(100% - 3px);
+  }
+
+  .about__intro-block {
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .about-info__txt {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .about-info__txt {
+    width: calc(100% - 3px);
+  }
 }
 
 @media screen and (min-width:560px) {
@@ -1185,6 +1942,75 @@ img {
   }
 
   .clientage__person {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .catalog__list {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .catalog__item {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .alcogol__item {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .alcogol__txt {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .alcogol__txt-full {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .oil__item {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .oil__txt {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .oil__txt-full {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .sticker-save__item {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .sticker-save__txt {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .sticker-save__txt-full {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .about__intro-block {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .about__intro-block {
+    width: calc(83.33333333333334% - 6px);
+  }
+
+  .about-info__txt {
     margin-left: 3px;
     margin-right: 3px;
   }
@@ -1284,11 +2110,159 @@ img {
     margin-left: 6px;
     margin-right: 6px;
   }
+
+  .catalog__list {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .catalog__item {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .alcogol__item {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .alcogol__txt {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .alcogol__txt {
+    display: none;
+  }
+
+  .alcogol__txt-full {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(58.333333333333336% - 12px);
+  }
+
+  .alcogol__txt-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .alcogol__order {
+    margin-bottom: 180px;
+  }
+
+  .oil__item {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .oil__txt {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .oil__txt {
+    display: none;
+  }
+
+  .oil__txt-full {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(58.333333333333336% - 12px);
+  }
+
+  .oil__txt-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .oil__order {
+    margin-bottom: 180px;
+  }
+
+  .sticker-save__item {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .sticker-save__txt {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .sticker-save__txt {
+    display: none;
+  }
+
+  .sticker-save__txt-full {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(58.333333333333336% - 12px);
+  }
+
+  .sticker-save__txt-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .sticker-save__order {
+    margin-bottom: 180px;
+  }
+
+  .about {
+    background-image: url(../img/bg-about-desktop@1x.jpg);
+    background-position: 100% center;
+  }
+
+  .about__intro-block {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .about__intro-block {
+    width: calc(58.333333333333336% - 12px);
+  }
+
+  .about-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .about-info__txt {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .about-info__txt {
+    width: calc(33.333333333333336% - 12px);
+  }
+
+  .about-info__order {
+    margin-top: -80px;
+  }
 }
 
 @media screen and (min-width:960px) {
   .main-nav__top {
     width: calc(50% - 12px);
+  }
+
+  .alcogol__img::before {
+    font-size: 24px;
+  }
+
+  .oil__img::before {
+    font-size: 24px;
+  }
+
+  .sticker-save__img::before {
+    font-size: 24px;
   }
 }
 
@@ -1349,6 +2323,19 @@ img {
     margin-right: 10px;
     margin-left: 10px;
     border: 0;
+  }
+
+  .main-nav__item:hover a {
+    color: #ee365d;
+  }
+
+  .main-nav__item--activ {
+    background-color: #fff;
+  }
+
+  .main-nav__item--activ .main-nav__item--link-activ {
+    font-weight: 500;
+    color: #ee365d;
   }
 
   .main-nav__item a {
@@ -1520,6 +2507,16 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #707070;
+  }
+
+  .about__intro-block {
+    width: calc(50% - 12px);
+  }
+
+  .about__intro-block {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 120px;
   }
 }
 
