@@ -15,16 +15,16 @@
         <a href="#" class="intro__link intro__link-01">Мы предлагаем</a>
       </li>
       <li class="intro__item intro__item-02">
-        <a href="#" class="intro__link intro__link-02"><img src="img/bg_intro-tablet@1x-01.jpg" alt="Стикеры" class="intro__img"></a>
+        <a href="#" class="intro__link intro__link-02"><img src="<?php echo get_template_directory_uri(); ?>/img/bg_intro-tablet@1x-01.jpg" alt="Стикеры" class="intro__img"></a>
       </li>
       <li class="intro__item intro__item-03">
-        <a href="#" class="intro__link intro__link-03"><img src="img/bg_intro-tablet@1x-02.jpg" alt="Наклейки" class="intro__img"></a>
+        <a href="#" class="intro__link intro__link-03"><img src="<?php echo get_template_directory_uri(); ?>/img/bg_intro-tablet@1x-02.jpg" alt="Наклейки" class="intro__img"></a>
       </li>
       <li class="intro__item intro__item-04">
-        <a href="#" class="intro__link intro__link-04"><img src="img/bg_intro-tablet@1x-03.jpg" alt="Этикетки" class="intro__img"></a>
+        <a href="#" class="intro__link intro__link-04"><img src="<?php echo get_template_directory_uri(); ?>/img/bg_intro-tablet@1x-03.jpg" alt="Этикетки" class="intro__img"></a>
       </li>
       <li class="intro__item intro__item-05">
-        <a href="#" class="intro__link intro__link-05"><img src="img/bg_intro-tablet@1x-04.jpg" alt="Этикетки" class="intro__img"></a>
+        <a href="#" class="intro__link intro__link-05"><img src="<?php echo get_template_directory_uri(); ?>/img/bg_intro-tablet@1x-04.jpg" alt="Этикетки" class="intro__img"></a>
       </li>
     </ul>
   </section>
@@ -38,7 +38,7 @@
         <p class="development__txt">Стикер - неотъемлемая часть практически любой современной продукции. Это одновременно удобный носитель информации и отличная реклама. Яркие и оригинальные стикеры сразу же бросаются в глаза потенциальному покупателю и вызывают интерес к продукции и самому бренду. Именно поэтому современные бренды так ответственно относятся к производству своей этикеточной продукции, стараясь доверять эту работу квалифицированным специалистам с опытом и первоклассным оборудованием.</p>
         <p class="development__txt">Если вы хотите заказать печать стикеров дешево, компания Sticker Label к вашим услугам. Мы работаем с любыми тиражами и беремся за работу любой сложности, в каждом из случаев гарантируя своим клиентам первоклассный результат.</p>
       </section>
-      <div class="development__img"><img src="img/img_development-tablet@1x-01.jpg" alt=""></div>
+      <div class="development__img"><img src="<?php echo get_template_directory_uri(); ?>/img/img_development-tablet@1x-01.jpg" alt=""></div>
       <div class="development__txt-block">
         <h3 class="development__header2">Создание и печать наклеек и стикеров</h3>
         <p class="development__txt">В своей работе мы используем только первоклассные материалы:</p>

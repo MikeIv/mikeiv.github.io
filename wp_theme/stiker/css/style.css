@@ -200,20 +200,20 @@ body {
 }
 .body {
   height: 100%;
-  background-image: url("../img/bg_body-mobile@1x.jpg");
+  background-image: url("<?php echo get_template_directory_uri(); ?>/img/bg_body-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center top;
 }
 @media screen and (min-width: 780px) {
   .body {
-    background-image: url("../img/bg_body-tablet@1x.jpg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/img/bg_body-tablet@1x.jpg");
     background-size: 100% auto;
   }
 }
 @media screen and (min-width: 1100px) {
   .body {
-    background-image: url("../img/bg_body-desktop@1x.jpg");
+    background-image: url("img/bg_body-desktop@1x.jpg");
     background-size: 100% auto;
   }
 }
@@ -2589,7 +2589,7 @@ body {
   line-height: 58px;
   text-transform: uppercase;
   color: #ffffff;
-  background-image: url("../img/bg_decor_nav-mobile_rot180.svg");
+  background-image: url("<?php echo get_template_directory_uri(); ?>/img/bg_decor_nav-mobile_rot180.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
