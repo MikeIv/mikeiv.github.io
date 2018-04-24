@@ -1,0 +1,4 @@
+User-agent: Yandex
+Disallow:
+Host: www.sticker-label.ru
+Sitemap: http://www.sticker-label.ru/sitemap.xml
