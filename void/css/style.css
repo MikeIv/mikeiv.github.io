@@ -344,8 +344,7 @@ html {
   transition: 1s;
 }
 .intro__image {
-  margin-top: 100px;
-  width: 235px;
+  margin-top: 80px;
   opacity: 0.5;
   transition: 1.3s;
 }
@@ -1710,11 +1709,8 @@ grid-template-areas:
   .main-nav__logo-link {
     display: none;
   }
-  .intro {
-    justify-content: center;
-  }
   .intro__image {
-    width: 650px;
+    width: 550px;
   }
   .intro__contacts {
     display: none;
@@ -1724,9 +1720,9 @@ grid-template-areas:
   }
   .intro__header {
     display: block;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
@@ -1819,6 +1815,12 @@ grid-template-areas:
   .debug > div {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .intro__image {
+    width: 650px;
+  }
+  .intro__header {
+    font-size: 52px;
   }
   .image-block__slide {
     height: 700px;
