@@ -344,7 +344,6 @@ html {
   transition: 1s;
 }
 .intro__image {
-  margin-top: 80px;
   opacity: 0.5;
   transition: 1.3s;
 }
@@ -353,7 +352,6 @@ html {
   transition: 1.3s;
 }
 .intro__contacts {
-  margin-top: 100px;
   margin-bottom: 30px;
   font-size: 20px;
   color: #ffc4df;
@@ -1710,6 +1708,7 @@ grid-template-areas:
     display: none;
   }
   .intro__image {
+    margin-top: 60px;
     width: 550px;
   }
   .intro__contacts {
@@ -1817,9 +1816,11 @@ grid-template-areas:
     padding-right: 30px;
   }
   .intro__image {
+    margin-top: 80px;
     width: 650px;
   }
   .intro__header {
+    margin-top: 90px;
     font-size: 52px;
   }
   .image-block__slide {
