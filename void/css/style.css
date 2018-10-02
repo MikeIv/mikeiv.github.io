@@ -1543,10 +1543,6 @@ grid-template-areas:
   .debug > div > div > div {
     width: calc(4.166666666666667% - 10px);
   }
-  .intro {
-    justify-content: center;
-    padding-top: 50px;
-  }
   .intro__header {
     margin-left: 5px;
     margin-right: 5px;
@@ -1719,6 +1715,10 @@ grid-template-areas:
   .main-nav__logo-link {
     display: none;
   }
+  .intro {
+    justify-content: center;
+    padding-top: 50px;
+  }
   .intro__image {
     margin-top: 50px;
     width: 550px;
@@ -1728,6 +1728,20 @@ grid-template-areas:
   }
   .intro__header {
     width: calc(50% - 10px);
+  }
+  .intro__header {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 1s;
+  }
+  .intro__header:hover {
+    color: #ff8daf;
+    transition: 1s;
   }
   .home__intro {
     width: calc(50% - 10px);
@@ -1816,20 +1830,6 @@ grid-template-areas:
   .intro__image {
     margin-top: 70px;
     width: 650px;
-  }
-  .intro__header {
-    display: block;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 45px;
-    font-weight: 300;
-    color: #ffffff;
-    text-transform: uppercase;
-    transition: 1s;
-  }
-  .intro__header:hover {
-    color: #ff8daf;
-    transition: 1s;
   }
   .image-block__slide {
     height: 700px;
