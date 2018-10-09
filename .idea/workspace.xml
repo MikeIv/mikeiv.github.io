@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c8cecf13-1075-4bee-9ac7-64b8f2b96dff" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/void/css/style.css" afterPath="$PROJECT_DIR$/void/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/void/css/style.min.css" afterPath="$PROJECT_DIR$/void/css/style.min.css" />
+      <change beforePath="$PROJECT_DIR$/void/flag_plomby.html" afterPath="$PROJECT_DIR$/void/flag_plomby.html" />
+      <change beforePath="$PROJECT_DIR$/void/gilosh_stickers.html" afterPath="$PROJECT_DIR$/void/gilosh_stickers.html" />
+      <change beforePath="$PROJECT_DIR$/void/inventar_stickers.html" afterPath="$PROJECT_DIR$/void/inventar_stickers.html" />
+      <change beforePath="$PROJECT_DIR$/void/plomb_stickers.html" afterPath="$PROJECT_DIR$/void/plomb_stickers.html" />
+      <change beforePath="$PROJECT_DIR$/void/plomby_void.html" afterPath="$PROJECT_DIR$/void/plomby_void.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,6 +51,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -56,7 +64,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -106,16 +113,17 @@
       <workItem from="1538663864772" duration="640000" />
       <workItem from="1538755091195" duration="38000" />
       <workItem from="1539010692255" duration="626000" />
+      <workItem from="1539093533917" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12004000" />
+    <option name="totallyTimeSpent" value="12064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2599364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2619237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
