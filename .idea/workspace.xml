@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8cecf13-1075-4bee-9ac7-64b8f2b96dff" name="Default" comment="add">
-      <change afterPath="$PROJECT_DIR$/Genotek/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/img/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/img/box-personal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/img/clear.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/img/pict-mob.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/img/shape-copy-51.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genotek/js/main-js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +67,7 @@
       <workItem from="1539010692255" duration="626000" />
       <workItem from="1539093533917" duration="942000" />
       <workItem from="1539182464331" duration="159000" />
-      <workItem from="1591288809246" duration="396000" />
+      <workItem from="1591288809246" duration="732000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1591288847177</created>
@@ -92,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591288951592</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add">
+      <created>1591289241448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591289241448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,9 +104,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="615" y="33" key="CommitChangelistDialog2" timestamp="1591288950466">
+    <state x="615" y="33" key="CommitChangelistDialog2" timestamp="1591289240025">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="615" y="33" key="CommitChangelistDialog2/1920.0.1440.870/0.0.1920.1050@0.0.1920.1050" timestamp="1591288950466" />
+    <state x="615" y="33" key="CommitChangelistDialog2/1920.0.1440.870/0.0.1920.1050@0.0.1920.1050" timestamp="1591289240025" />
   </component>
 </project>
