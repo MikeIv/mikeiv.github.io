@@ -455,7 +455,7 @@ html {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  background-image: url("/img/buk_logo2.svg");
+  background-image: url("img/buk_logo2.svg");
 }
 .main-middle__header {
   margin: 0;
@@ -571,7 +571,7 @@ html {
   height: 88px;
   margin: 0;
   padding: 0;
-  background-image: url("/img/buk_logo3.svg");
+  background-image: url("img/buk_logo3.svg");
 }
 .footer__h2 {
   margin: 0;
