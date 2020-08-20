@@ -210,7 +210,7 @@ img {
   padding: 0;
   padding-top: 40px;
   box-sizing: border-box;
-  background-image: url("/img/img-01-mob.jpg");
+  background-image: url("../img../img-01-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -419,7 +419,7 @@ img {
   right: 45px;
   width: 275px;
   height: 180px;
-  background-image: url("/img/img-02-mob.jpg");
+  background-image: url("../img../img-02-mob.jpg");
 }
 .photo-block__image-txt {
   display: none;
@@ -708,7 +708,7 @@ img {
   padding-bottom: 20px;
   font-family: "Raleway", sans-serif;
   background-color: #ffffff;
-  background-image: url("/img/img-06.jpg");
+  background-image: url("../img../img-06.jpg");
   background-repeat: no-repeat;
   background-position: 10% right;
   background-size: cover;
@@ -793,7 +793,7 @@ img {
     height: 400px;
     color: #ffffff;
     background-color: #ffffff;
-    background-image: url("/img/img-01-desktop.jpg");
+    background-image: url("../img../img-01-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -890,7 +890,7 @@ img {
     padding-top: 50px;
     padding-bottom: 20px;
     padding-left: 40px;
-    background-image: url("/img/img-02-desktop.svg");
+    background-image: url("../img../img-02-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -1081,7 +1081,7 @@ img {
     height: 690px;
     color: #ffffff;
     background-color: #ffffff;
-    background-image: url("/img/img-01-desktop.jpg");
+    background-image: url("../img../img-01-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
