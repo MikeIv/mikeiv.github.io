@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Новый проект">
+    <meta name="keywords"
+          content="">
+    <link rel="shortcut icon"
+          href="img/favicons/favicon.svg"
+          type="image/svg+xml">
+    <link rel="shortcut icon"
+          href="img/favicons/favicon.webp"
+          type="image/webp">
+    <link rel="shortcut icon"
+          href="img/favicons/favicon.png"
+          type="image/x-icon">
+    <link rel="stylesheet"
+          href="css/libs.min.css">
+    <link rel="stylesheet"
+          href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+
+
+    <title>Guta</title>
+
+</head>
+
+
+<body class="page__body">
+<!-- inline svg sprite -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="40"
+     viewBox="0 0 752 40" style="display: none;">
+  <symbol>
+    <svg id="icon-google" viewBox="0 0 40 40">
+      <path d="m29.406 18.125c0.125 0.6695 0.193 1.3694 0.193 2.0998 0 5.7131-3.8236 9.7755-9.5987 9.7755-1.3133 4e-4 -2.6139-0.258-3.8273-0.7604s-2.316-1.239-3.2447-2.1676c-0.9286-0.9287-1.6652-2.0313-2.1676-3.2447s-0.7608-2.514-0.7604-3.8273c-4e-4 -1.3133 0.258-2.6139 0.7604-3.8273s1.239-2.316 2.1676-3.2447c0.9287-0.9286 2.0313-1.6652 3.2447-2.1676s2.514-0.7608 3.8273-0.7604c2.7001 0 4.9563 0.9935 6.6873 2.6067l-2.819 2.8189v-0.0071c-1.0493-0.9996-2.3811-1.5126-3.8683-1.5126-3.2995 0-5.9813 2.7875-5.9813 6.088 0 3.2995 2.6818 6.0931 5.9813 6.0931 2.9937 0 5.0315-1.7117 5.45-4.0624h-5.45v-3.8999h9.4067-1e-3z" fill="#757575"/>
+    </svg>
+    <svg id="icon-yandex" viewBox="0 0 40 40">
+      <path d="m26.297 30h-3.4945v-17.297h-1.5604c-2.8572 0-4.3517 1.4286-4.3517 3.5604 0 2.4176 1.033 3.5385 3.1648 4.9671l1.7583 1.1868-5.055 7.5824h-3.7582l4.5495-6.7692c-2.6154-1.8682-4.088-3.6923-4.088-6.7693 0-3.8461 2.6814-6.4615 7.7583-6.4615h5.0549l0.022 20z" fill="#757575"/>
+    </svg>
+    <svg id="icon-fb" viewBox="0 0 40 40">
+      <g clip-path="url(#a-fb)">
+        <path d="m24.964 21.333 0.5927-3.8606h-3.7047v-2.5054c0-1.056 0.5174-2.086 2.1767-2.086h1.684v-3.2866s-1.528-0.26067-2.9893-0.26067c-3.0507 0-5.0447 1.8493-5.0447 5.1967v2.9426h-3.3913v3.8607h3.3913v9.3333h4.1733v-9.3333l3.112-7e-4z" fill="#757575"/>
+      </g>
+      <defs>
+        <clipPath id="a-fb">
+          <rect transform="translate(9.3334 9.3333)" width="21.333" height="21.333" fill="#fff"/>
+        </clipPath>
+      </defs>
+    </svg>
+    <svg id="icon-inst" viewBox="0 0 28 28">
+      <g clip-path="url(#a)" fill="#14A5DA">
+        <path d="m19.825 1h-11.65c-1.9023 0.00223-3.726 0.75889-5.0711 2.104-1.3451 1.3451-2.1018 3.1688-2.104 5.0711v11.65c0.00223 1.9022 0.75889 3.726 2.104 5.0711 1.3451 1.3451 3.1688 2.1018 5.0711 2.104h11.65c1.9022-0.0022 3.726-0.7589 5.0711-2.104s2.1018-3.1689 2.104-5.0711v-11.65c-0.0022-1.9023-0.7589-3.726-2.104-5.0711-1.3451-1.3451-3.1689-2.1018-5.0711-2.104zm4.8764 18.825c0 1.2933-0.5137 2.5336-1.4283 3.4481-0.9145 0.9146-2.1548 1.4283-3.4481 1.4283h-11.65c-1.2919-0.0022-2.53-0.5169-3.4428-1.4312s-1.4253-2.1534-1.4253-3.4452v-11.65c-1e-5 -1.2919 0.51261-2.5309 1.4253-3.4452 0.9127-0.91427 2.1509-1.429 3.4428-1.4312h11.65c1.2933 0 2.5336 0.51377 3.4481 1.4283 0.9146 0.91452 1.4283 2.1549 1.4283 3.4482v11.65z"/>
+        <path d="m14 7.3007c-1.3249 0-2.6202 0.3929-3.7219 1.129-1.1016 0.73612-1.9603 1.7824-2.4674 3.0065-0.50705 1.2242-0.63971 2.5712-0.38122 3.8707s0.89654 2.4932 1.8334 3.4301c0.93695 0.9369 2.1306 1.575 3.4302 1.8335s2.6465 0.1258 3.8706-0.3813c1.2242-0.507 2.2705-1.3657 3.0066-2.4674s1.129-2.3969 1.129-3.7219c-0.0022-1.7761-0.7087-3.4787-1.9646-4.7346-1.2559-1.2559-2.9586-1.9624-4.7347-1.9646zm0 11.098c-0.8686 0-1.7178-0.2576-2.4401-0.7402s-1.2853-1.1686-1.6177-1.9711c-0.33243-0.8026-0.41941-1.6857-0.24993-2.5377 0.16947-0.852 0.58774-1.6346 1.202-2.2489s1.3969-1.0326 2.2489-1.202c0.852-0.16948 1.7351-0.0825 2.5377 0.24993 0.8025 0.33241 1.4885 0.89541 1.9711 1.6177s0.7402 1.5715 0.7402 2.4401c-0.0031 1.1634-0.467 2.278-1.2903 3.1-0.8232 0.8219-1.9385 1.2842-3.1019 1.2855v0.0067z"/>
+        <path d="m20.98 5.3451c-0.3908 6.7e-4 -0.7694 0.13682-1.0712 0.38527s-0.5081 0.59383-0.5838 0.97732c-0.0757 0.38348-0.0162 0.78136 0.1685 1.1259 0.1847 0.3445 0.4831 0.61432 0.8444 0.76351s0.7632 0.16852 1.1371 0.05469c0.374-0.11382 0.6969-0.35376 0.9138-0.67895s0.3144-0.71552 0.2758-1.1045c-0.0385-0.38898-0.2108-0.75257-0.4873-1.0288-0.3181-0.31649-0.7485-0.49422-1.1973-0.49438z"/>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <rect transform="translate(1 1)" width="26" height="26" fill="#fff"/>
+        </clipPath>
+      </defs>
+    </svg>
+    <svg id="icon-fb-f" viewBox="0 0 28 28">
+      <g clip-path="url(#a)">
+        <path d="m10.622 6.0352v3.5792h-2.6152v4.3737h2.6224v13.008h5.387v-13.004h3.6156s0.339-2.0994 0.503-4.3938h-4.1095v-2.9924c0.0498-0.28019 0.1918-0.53571 0.4034-0.72591 0.2117-0.19021 0.4809-0.30417 0.7648-0.32378h2.9358v-4.5578h-3.991c-5.6494 0-5.5163 4.3828-5.5163 5.0371z" fill="#14A5DA"/>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <rect transform="translate(8 1)" width="12.134" height="26" fill="#fff"/>
+        </clipPath>
+      </defs>
+    </svg>
+    <svg id="icon-odn" viewBox="0 0 28 28">
+      <g clip-path="url(#a)" fill="#14A5DA">
+        <path d="m14.09 1c-1.2856 0-2.5423 0.38122-3.6112 1.0954-1.0689 0.71423-1.902 1.7294-2.394 2.9171s-0.62071 2.4946-0.3699 3.7555c0.2508 1.2609 0.86988 2.4191 1.7789 3.3281 0.90905 0.909 2.0672 1.5281 3.328 1.7789 1.2609 0.2508 2.5679 0.1221 3.7556-0.3699s2.2029-1.3251 2.9171-2.394 1.0954-2.3256 1.0954-3.6112c0-1.7239-0.6848-3.3772-1.9038-4.5962-1.219-1.219-2.8723-1.9038-4.5962-1.9038zm0 9.75c-0.6428 0-1.2711-0.1906-1.8056-0.5477-0.5344-0.35714-0.951-0.86472-1.197-1.4586s-0.3103-1.2473-0.1849-1.8778c0.1254-0.63044 0.4349-1.2095 0.8894-1.6641 0.4546-0.45452 1.0337-0.76405 1.6641-0.88945s1.2839-0.06104 1.8778 0.18494c0.5938 0.24599 1.1014 0.66255 1.4585 1.197s0.5477 1.1628 0.5477 1.8056c-8e-4 0.86168-0.3435 1.6878-0.9528 2.2971-0.6093 0.60928-1.4355 0.95198-2.2972 0.95288z"/>
+        <path d="m22.713 13.82c-0.1508-0.1511-0.3299-0.271-0.5271-0.3528s-0.4086-0.1239-0.6221-0.1239-0.4249 0.0421-0.6221 0.1239-0.3763 0.2017-0.5271 0.3528c-1.6777 1.6732-3.9505 2.6128-6.32 2.6128-2.3694 0-4.6422-0.9396-6.32-2.6128-0.305-0.3047-0.71858-0.4759-1.1498-0.4757-0.43118 1e-4 -0.84465 0.1716-1.1494 0.4766-0.30478 0.305-0.47592 0.7186-0.47576 1.1497 1.6e-4 0.4312 0.1716 0.8446 0.4766 1.1494 1.9445 1.9452 4.4931 3.1707 7.2267 3.475l-4.6334 4.6334c-0.30478 0.3047-0.476 0.7181-0.476 1.1491 0 0.4311 0.17122 0.8444 0.476 1.1492s0.71814 0.476 1.1492 0.476 0.84441-0.1712 1.1492-0.476l3.7266-3.7267 3.7267 3.7267c0.3048 0.3048 0.7181 0.476 1.1492 0.476 0.431 0 0.8444-0.1712 1.1491-0.476 0.3048-0.3048 0.476-0.7181 0.476-1.1492 0-0.431-0.1712-0.8444-0.476-1.1491l-4.6333-4.6334c2.7335-0.3043 5.2822-1.5298 7.2267-3.475 0.3049-0.305 0.4762-0.7187 0.4762-1.15s-0.1713-0.8449-0.4762-1.15z"/>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <rect transform="translate(5 1)" width="18.188" height="26" fill="#fff"/>
+        </clipPath>
+      </defs>
+    </svg>
+
+    <svg id="icon-vk" viewBox="0 0 40 40">
+      <g clip-path="url(#a-vk)">
+        <path d="m27.215 21.201c0.7287 0.5985 1.3971 1.267 1.9957 1.9957 0.2805 0.3117 0.5143 0.6624 0.6941 1.0412 0.2603 0.5206 0 1.128-0.4338 1.128l-2.9501-0.0868c-0.3453 0.0381-0.6946-0.0138-1.0139-0.1506s-0.5977-0.354-0.8083-0.6303c-0.4004-0.412-0.777-0.8466-1.1279-1.3015-0.1512-0.1696-0.3266-0.3158-0.5206-0.4339-0.4339-0.2603-0.781-0.1735-0.9545 0.2603-0.2065 0.4352-0.3245 0.9071-0.3471 1.3883 0 0.6942-0.2603 0.8677-0.9544 0.8677-1.4422 0.1078-2.8857-0.1929-4.1649-0.8677-1.0846-0.6806-2.0274-1.5645-2.7765-2.603-1.4746-2.0593-2.7253-4.2699-3.7311-6.5944-0.26026-0.5206-0.0867-0.7809 0.5206-0.8677h2.8634c0.1742 0.0174 0.3399 0.0836 0.4781 0.1911 0.1382 0.1074 0.2431 0.2518 0.3028 0.4163 0.4783 1.2641 1.12 2.4601 1.9089 3.5575 0.2132 0.3284 0.4767 0.6212 0.7809 0.8677 0.3471 0.2603 0.6074 0.1735 0.7809-0.2603 0-0.2603 0.0868-0.5206 0.0868-0.7809 0.087-0.8655 0.087-1.7376 0-2.6031-0.0308-0.2424-0.1412-0.4677-0.314-0.6404-0.1728-0.1728-0.3981-0.2833-0.6405-0.314-0.2603-0.0868-0.2603-0.1735-0.0867-0.3471 0.0926-0.1432 0.222-0.2591 0.3746-0.3354s0.3228-0.1103 0.493-0.0984h3.2972c0.5206 0.0867 0.6074 0.347 0.6942 0.8677v3.6442c0 0.1735 0.0867 0.7809 0.4338 0.9545 0.3471 0.1735 0.5206-0.1736 0.6942-0.3471 0.7657-0.8439 1.3819-1.8123 1.8221-2.8634 0.2386-0.4461 0.4416-0.9103 0.6074-1.3882 0.0523-0.1622 0.1579-0.3019 0.2997-0.3965 0.1418-0.0945 0.3113-0.1383 0.4812-0.1242h3.3839c0.5206 0.0868 0.6942 0.3471 0.5206 0.8677-0.3189 0.768-0.7266 1.496-1.2147 2.1692-0.5206 0.6942-1.128 1.4751-1.6486 2.1692-0.1108 0.1132-0.1951 0.2494-0.2472 0.3989-0.052 0.1496-0.0704 0.3088-0.0538 0.4662 0.0166 0.1575 0.0677 0.3094 0.1497 0.4448s0.1929 0.2511 0.3248 0.3387z" clip-rule="evenodd" fill="#757575" fill-rule="evenodd"/>
+      </g>
+      <defs>
+        <clipPath id="a-vk">
+          <rect transform="translate(10 14)" width="20" height="11.367" fill="#fff"/>
+        </clipPath>
+      </defs>
+    </svg>
+    <svg id="icon-arrow" viewBox="0 0 31.495 22.141">
+      <path transform="translate(.001 -4.676)" d="M21.22,5.009A1.117,1.117,0,1,0,19.633,6.58l8.047,8.047H1.126A1.118,1.118,0,0,0,0,15.738a1.131,1.131,0,0,0,1.127,1.127H27.68L19.633,24.9a1.139,1.139,0,0,0,0,1.587,1.112,1.112,0,0,0,1.587,0l9.952-9.952a1.12,1.12,0,0,0,0-1.571Z" fill="#fff"/>
+    </svg>
+  </symbol>
+</svg>
+
+<!--<svg class="header__icon-call" role="button">-->
+<!--    <use xlink:href="#icon-call-center"></use>-->
+<!--</svg>-->
+<!-- ================= -->
+<!-- inline svg sprite -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="40"
+     viewBox="0 0 752 40" style="display: none;">
+  <symbol>
+    <svg id="icon-call-center" viewBox="0 0 40 40">
+      <path
+        d="M20.1818 10C15.6364 10 12 13.6364 12 18.1818V24.5455C12 25.2688 12.2873 25.9625 12.7988 26.4739C13.3103 26.9854 14.004 27.2727 14.7273 27.2727H17.4545V20H13.8182V18.1818C13.8182 16.4941 14.4886 14.8755 15.682 13.682C16.8755 12.4886 18.4941 11.8182 20.1818 11.8182C21.8696 11.8182 23.4882 12.4886 24.6816 13.682C25.875 14.8755 26.5455 16.4941 26.5455 18.1818V20H22.9091V27.2727H26.5455V28.1818H20.1818V30H25.6364C26.3597 30 27.0534 29.7127 27.5648 29.2012C28.0763 28.6897 28.3636 27.996 28.3636 27.2727V18.1818C28.3636 13.6364 24.7 10 20.1818 10Z"
+        fill="#757575"/>
+    </svg>
+    <svg id="icon-burger" width="27" height="18.167" viewBox="0 0 27 18.167">
+      <g id="burger" transform="translate(-278 -56.5)">
+        <line id="Line_728" data-name="Line 728" x2="27" transform="translate(278 57.5)" fill="none"
+              stroke="#000" stroke-width="2"/>
+        <line id="Line_729" data-name="Line 729" x2="27" transform="translate(278 65.583)" fill="none"
+              stroke="#000" stroke-width="2"/>
+        <line id="Line_730" data-name="Line 730" x2="27" transform="translate(278 73.667)" fill="none"
+              stroke="#000" stroke-width="2"/>
+      </g>
+    </svg>
+    <svg id="icon-close" width="22.425" height="22.57" viewBox="0 0 22.425 22.57">
+      <g id="burger" transform="translate(-279.782 -55.793)">
+        <line id="Line_728" data-name="Line 728" x2="22" y2="22" transform="translate(280.5 56.5)" fill="none" stroke="#000" stroke-width="2"/>
+        <line id="Line_730" data-name="Line 730" y1="22.167" x2="21.5" transform="translate(280.5 56.5)" fill="none" stroke="#000" stroke-width="2"/>
+      </g>
+    </svg>
+  </symbol>
+</svg>
+<!-- ================= -->
+
+<header id="hdr" class="header">
+
+  <!--   Top Menu   -->
+  <section class="header__top-line">
+    <h2 class="v-hidden">Верхнее меню</h2>
+    <div class="header__wrapper">
+      <ul class="header__top-list">
+        <li class="header__top-item">Режим работы</li>
+        <li class="header__top-item">Правила посещения</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <div class="header__wrapper header__bottom-line">
+    <a href="#" class="header__logo">
+      <img src="img/logo.png" alt="логотип компании" class="header__logo-img">
+    </a>
+
+    <nav class="header__main-nav">
+      <ul class="header__main-nav-list">
+        <li class="header__main-nav-item">
+          <a href="#" class="header__main-nav-link">О компании</a>
+
+            <ul class="header__main-subnav">
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Раздел 1</a></li>
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Раздел 2</a></li>
+            </ul>
+        </li>
+        <li class="header__main-nav-item">
+          <a href="#" class="header__main-nav-link">Партнёрская программа</a>
+
+            <ul class="header__main-subnav">
+                <li
+                  class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Программа
+                    развития</a></li>
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Программа
+                    финансирования</a></li>
+            </ul>
+        </li>
+        <li class="header__main-nav-item">
+          <a href="#" class="header__main-nav-link">Реклама</a>
+
+            <ul class="header__main-subnav">
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Раздел 1</a></li>
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Раздел 2</a></li>
+            </ul>
+        </li>
+        <li class="header__main-nav-item">
+          <a href="#" class="header__main-nav-link">Пресс-центр</a>
+
+            <ul class="header__main-subnav">
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Раздел 1</a></li>
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Раздел 2</a></li>
+            </ul>
+        </li>
+        <li class="header__main-nav-item">
+          <a href="#" class="header__main-nav-link">Вакансии</a>
+
+            <ul class="header__main-subnav">
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Вакансия 1</a></li>
+                <li class="header__main-subnav-item"><a href="#" class="header__main-subnav-link">Вакансия 2</a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__menu-enter">
+      <button class="header__enter-reg">Регистрация</button>
+      <a href="#" class="header__enter-link">Вход</a>
+    </div>
+
+    <!--        <h1 class="header__title">Header</h1>-->
+    <button class="header__menu-mob-btn" @click="show = !show">
+      <svg class="header__icon-burger" role="button">
+        <use xlink:href="#icon-burger"></use>
+      </svg>
+    </button>
+
+    <!--   mob Menu   -->
+    <section class="header__menu-mob" v-show="show">
+      <h2 class="v-hidden">Мобильное меню</h2>
+      <header class="header__menu-mob-head">
+        <a href="#" class="header__logo">
+          <img src="img/logo.png" alt="логотип компании" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-mob-btn"  @click="show = false">
+          <svg class="header__icon-close" role="button">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+      </header>
+
+      <nav class="header__mob-nav">
+        <ul class="header__mob-list">
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-item-link">Главная</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-item-link">О компании</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-item-link">Продукция</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-item-link">Производство</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__mob-enter">
+        <a href="" class="header__mob-enter-link">Вход</a>
+        <a href="" class="header__mob-enter-link">Регистрация</a>
+      </div>
+
+      <div class="header__mob-rules">
+        <a href="" class="header__mob-rules-link">Вход</a>
+        <a href="" class="header__mob-rules-link">Регистрация</a>
+      </div>
+
+    </section>
+
+  </div>
+
+
+</header>
+
+
+<script>
+
+  const vw = new Vue ({
+    el: '#hdr',
+    data: {
+      show: false,
+
+    },
+    methods: {
+
+    }
+
+  })
+
+</script>
+<main class="main">
+    <section id="crs" class="slider">
+  <h2 class="v-hidden">Слайдер</h2>
+  <div class="slider__wrapper">
+
+
+
+    <div class="slider__item" :style="{ 'margin-left': '-' + (200 * this.itemnum) + '%' }">
+      <div class="slider__link-wrapper">
+        <a href="#" class="slider__link"
+           v-for="(item, id) in items"
+           :key="id"
+           v-bind:data-slide-to="id"
+           :class="{ 'active' : id===itemnum }"
+
+           :interval="0"
+        >
+
+          <article class="slider__describe-block">
+            <div  class="slider__describe-btn">{{ item.btn }}</div>
+            <h2 class="slider__describe-h2">{{ item.title }}</h2>
+            <p class="slider__describe-txt">Спрайты должны немного отличаться друг от друга, чтобы было заметно движение.</p>
+          </article>
+
+        <img :src="item.src" alt="img" class="slider__item-img">
+      </a>
+      </div>
+    </div>
+
+    <div class="slider__line-block">
+      <span class="slider__line"
+            v-for="(item, id) in items"
+            :key="id"
+            v-bind:data-slide-to="id"
+            :class="{ 'active' : id===itemnum }"
+      ></span>
+    </div>
+      <div class="slider__btn-wrapper">
+          <button class="slider__btn slider__prev" @click="prevSlide">
+              <svg class="slider__icon-move" role="button">
+                  <use xlink:href="#icon-arrow"></use>
+              </svg>
+          </button>
+          <button class="slider__btn slider__next" @click="nextSlide">
+              <svg class="slider__icon-move" role="button">
+                  <use xlink:href="#icon-arrow"></use>
+              </svg>
+          </button>
+      </div>
+  </div>
+
+</section>
+
+
+<script>
+
+  const crs = new Vue ({
+    el: '#crs',
+    data: {
+      itemnum: 0,
+      interval: 3000,
+      items: [
+        {
+          id: 1,
+          btn: 'Анимация',
+          title: 'Подготовка спрайтов для анимации в Unity',
+          src: 'img/slide_1.jpg'
+        },
+        {
+          id: 2,
+          btn: 'Анимация-2',
+          title: 'Подготовка спрайтов для анимации-2 в Unity',
+          src: 'img/slide_2.jpg'
+        },
+        {
+          id: 3,
+          btn: 'Анимация-3',
+          title: 'Подготовка спрайтов для анимации-3 в Unity',
+          src: 'img/slide_3.jpg'
+        },
+
+      ]
+    },
+    methods: {
+      prevSlide() {
+        if (this.itemnum > 0) {
+          this.itemnum--
+          console.log(this.itemnum)
+        }
+      },
+      nextSlide() {
+        if (this.itemnum >= this.items.length - 1) {
+          this.itemnum = 0
+
+        } else {
+          this.itemnum++
+          console.log(this.itemnum)
+        }
+      },
+    },
+    mounted() {
+      if(this.interval > 0) {
+        let vm = this;
+        setInterval( function () {
+          vm.nextSlide()
+        }, vm.interval)
+      }
+    }
+
+  })
+
+
+</script>
+    <section class="about">
+  <div class="about__wrapper">
+    <h2 class="about__h2">О компании</h2>
+
+    <p class="about__txt">Что-то более продвинутое делается с помощью покадровой анимации — когда для разных состояний объекта (стоит, идет, в прыжке, атакует) создается несколько спрайтов (двумерное изображение), которые сменяют друг друга с определенным интервалом.</p>
+
+    <a href="#" class="about__link">Подробнее</a>
+
+  </div>
+</section>
+    <section id="ns" class="news">
+  <div class="news__wrapper">
+    <div class="news__title-row">
+      <h2 class="news__h2">Новости</h2>
+      <a href="#" class="news__h3">Все новости</a>
+    </div>
+
+    <ul class="news__pict-list">
+      <li class="news__pict-item">
+        <img class="news__pict-item-img" src="img/img_1.jpg" alt="frame-img">
+        <p class="news__pict-item-num">2</p>
+      </li>
+      <li class="news__pict-item">
+        <img class="news__pict-item-img" src="img/img_2.jpg" alt="frame-img">
+        <p class="news__pict-item-num">1</p>
+      </li>
+      <li class="news__pict-item">
+        <img class="news__pict-item-img" src="img/img_3.jpg" alt="frame-img">
+        <p class="news__pict-item-num">3</p>
+      </li>
+    </ul>
+
+    <ul class="news__pict-list news__pict-list--add" :class="{ 'active' : show }">
+      <li class="news__pict-item">
+        <img class="news__pict-item-img" src="img/img_1.jpg" alt="frame-img">
+        <p class="news__pict-item-num">2</p>
+      </li>
+      <li class="news__pict-item">
+        <img class="news__pict-item-img" src="img/img_2.jpg" alt="frame-img">
+        <p class="news__pict-item-num">1</p>
+      </li>
+      <li class="news__pict-item">
+        <img class="news__pict-item-img" src="img/img_3.jpg" alt="frame-img">
+        <p class="news__pict-item-num">3</p>
+      </li>
+    </ul>
+
+    <button class="news__btn" @click="show = !show" :class="{ 'active' : !show }">Показать ещё</button>
+    <button class="news__btn" @click="show = !show" :class="{ 'active' : show }">Скрыть</button>
+
+  </div>
+
+</section>
+
+
+<script>
+  new Vue ({
+    el: '#ns',
+    data: {
+      show: false
+    }
+
+  })
+
+</script>
+    <section id="sb" class="subscribe">
+  <div class="subscribe__wrapper">
+    <h2 class="v-hidden">Подписка на рассылку</h2>
+
+    <form class="subscribe__form"
+          @submit.prevent="checkForm"
+    >
+      <h2 class="subscribe__h2">подпишитесь на рассылку</h2>
+      <div class="subscribe__content-wrapper">
+
+
+
+        <label class="subscribe__label">
+
+            <div class="subscribe__error-block">
+                <p class="subscribe__error-item">{{ errors }}</p>
+            </div>
+
+          <span class="subscribe__label-txt">Имя</span>
+          <input type="text" class="subscribe__input" placeholder="Имя"
+                 id="name"
+                 name="name"
+                 v-model="youname"
+                 :class="{ attention:  this.errors }"
+          >
+        </label>
+
+
+
+        <label class="subscribe__label">
+
+            <div class="subscribe__error-block">
+                <p class="subscribe__error-item">{{ emailerrors }}</p>
+            </div>
+
+          <span class="subscribe__label-txt">E-mail</span>
+          <input type="text" class="subscribe__input" placeholder="examle@you.mail"
+                 id="email"
+                 v-model="email"
+                 name="email"
+                 :class="{ attention:  this.emailerrors }"
+          >
+        </label>
+
+        <label class="subscribe__label">
+          <span class="subscribe__label-txt">Ваши комментарии</span>
+          <textarea class="subscribe__textarea" name="" id="" cols="30" rows="10"></textarea>
+        </label>
+
+
+
+        <button class="subscribe__btn" type="submit" @click:="checkForm">Подписаться</button>
+
+          <div class="subscribe__success-block">
+              <p class="subscribe__success-item">{{  success }}</p>
+          </div>
+      </div>
+
+      <div class="subscribe__success"
+            v-show="modal"
+      >
+        <div class="subscribe__content">
+          <p class="subscribe__success-txt">Уважаемый, {{ successname }}, спасибо за подписку!</p>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+
+<script>
+
+
+  const sb = new Vue ({
+    el: '#sb',
+    data: {
+      errors: '',
+      emailerrors: '',
+      success: '',
+      youname: null,
+      email: null,
+      send: false,
+      modal: false,
+      successname: '',
+
+    },
+
+    methods: {
+      checkForm () {
+
+        this.errors = ''
+        this.emailerrors = ''
+        this.success = ''
+
+
+     if (!this.youname) {
+          this.errors = 'Заполните поле';
+        } else if (!this.validName(this.youname)) {
+          this.errors = 'Цифры в имени недопустимы';
+        }
+        else if (!this.email) {
+          this.emailerrors = 'Заполните поле';
+        } else if (!this.validEmail(this.email)) {
+          this.emailerrors = 'Не верный адрес';
+        }
+
+     else if (this.youname && this.email) {
+          this.success = 'Заявка отправлена';
+
+          setTimeout(() => {
+            this.modal = !this.modal
+          }, 1500);
+
+
+       setTimeout(() => {
+         this.modal = !this.modal
+       }, 4000);
+
+          this.successname = this.youname
+
+        this.youname = null
+        this.email = null
+        }
+
+
+
+      },
+      validName: function (youname) {
+        let re =
+          /^[A-Za-zА-Яа-я +]*$/g;
+        return re.test(youname);
+      },
+      validEmail: function (email) {
+        let re =
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      },
+
+
+      // showModal() {
+      //     return setTimeout(() => {
+      //       this.showModal()
+      //       this.send = !this.send
+      //     }, 5000)
+      // },
+
+    },
+
+
+  })
+
+</script>
+
+</main>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <h1 class="v-hidden">Footer</h1>
+    <div class="footer__col footer__col--left">
+      <a href="#" class="footer__logo">
+      <img src="img/logo.png" alt="логотип компании" class="header__logo-img">
+    </a>
+
+      <p class="footer__txt footer__txt--mb">г. Москва, метро Бауманская, ул. Бауманская, дом 44</p>
+      <p class="footer__txt footer__txt--bold footer__txt--tel">+7 000 000 00 00</p>
+    </div>
+
+
+    <div class="footer__col footer__col--right">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">О компании</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Партнёрская программа</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реклама</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Пресс-центр</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Вакансии</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Помощь</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Правила</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__incol-block">
+        <section class="footer__social footer__social--left">
+          <h2 class="footer__social-h2">Мы в соц. сетях</h2>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <svg class="footer__social-icon" role="button">
+                <use xlink:href="#icon-fb-f"></use>
+              </svg>
+            </li>
+            <li class="footer__social-item">
+              <svg class="footer__social-icon" role="button">
+                <use xlink:href="#icon-odn"></use>
+              </svg>
+            </li>
+            <li class="footer__social-item">
+              <svg class="footer__social-icon" role="button">
+                <use xlink:href="#icon-inst"></use>
+              </svg>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer__social footer__social--right">
+          <h2 class="footer__social-h2 footer__social-h2--mr">Подписка на новости</h2>
+          <form class="footer__subscribe">
+            <input type="text" class="footer__subscribe-input" placeholder="example@mail.com" required>
+            <button class="footer__subscribe-btn">Ок</button>
+          </form>
+        </section>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <section class="footer__privacy">
+    <h2 class="v-hidden">Политика конфиденциальности</h2>
+    <div class="footer__bottom-line">
+      <span class="footer__privacy-txt footer__privacy-txt--left">© ООО «Глобус», 2016 — 2019</span>
+      <span class="footer__privacy-txt">Политика конфиденциальности</span>
+      <span class="footer__privacy-txt">Cookies</span>
+    </div>
+
+  </section>
+</footer>
+
+
+
+<script src="../assets/js/libs.min.js"></script>
+<script src="../assets/js/main.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuelidate@0.7.6/dist/vuelidate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuelidate@0.7.6/dist/validators.min.js"></script>
+
+
+<script>
+
+  // new Vue({
+  //
+  //   el: '#modal',
+  //   data: {
+  //     title: '',
+  //     type: 'password',
+  //     show: false,
+  //     styleref: '',
+  //
+  //   },
+  //   methods: {
+  //
+  //   },
+  //
+  // })
+
+</script>
+</body>
+
+</html>
