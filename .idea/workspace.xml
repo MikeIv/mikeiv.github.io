@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8cecf13-1075-4bee-9ac7-64b8f2b96dff" name="Default" comment="add correct">
+      <change afterPath="$PROJECT_DIR$/Gutagroup/img/done.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gutagroup/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Gutagroup/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gutagroup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gutagroup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gutagroup/sourcemaps/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Gutagroup/sourcemaps/style.min.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +17,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1crZjViIfUktu7ng1xawugvH3rA" />
@@ -34,6 +39,7 @@
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -111,11 +117,5 @@
     <MESSAGE value="add" />
     <MESSAGE value="add correct" />
     <option name="LAST_COMMIT_MESSAGE" value="add correct" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="615" y="33" key="CommitChangelistDialog2" timestamp="1591290067275">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="615" y="33" key="CommitChangelistDialog2/1920.0.1440.870/0.0.1920.1050@0.0.1920.1050" timestamp="1591290067275" />
   </component>
 </project>

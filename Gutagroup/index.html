@@ -21,7 +21,7 @@
     <link rel="stylesheet"
           href="css/libs.min.css">
     <link rel="stylesheet"
-          href="css/style.min.css">
+          href="css/style.min.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -521,7 +521,8 @@
             v-show="modal"
       >
         <div class="subscribe__content">
-          <p class="subscribe__success-txt">Уважаемый, {{ successname }}, спасибо за подписку!</p>
+            <img src="img/done.svg" alt="check" class="subscribe__success-icon">
+          <p class="subscribe__success-txt">Уважаемый, <b class="subscribe__success-txt--name">{{ successname }}</b>, спасибо за подписку!</p>
         </div>
       </div>
 
