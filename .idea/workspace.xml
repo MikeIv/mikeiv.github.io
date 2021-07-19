@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8cecf13-1075-4bee-9ac7-64b8f2b96dff" name="Default" comment="add correct">
-      <change afterPath="$PROJECT_DIR$/Gutagroup/img/done.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gutagroup/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Gutagroup/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gutagroup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gutagroup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gutagroup/sourcemaps/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Gutagroup/sourcemaps/style.min.css.map" afterDir="false" />
-    </list>
+    <list default="true" id="c8cecf13-1075-4bee-9ac7-64b8f2b96dff" name="Default" comment="add correct" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
